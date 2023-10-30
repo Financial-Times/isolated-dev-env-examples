@@ -1,15 +1,12 @@
 {
   "packages": [
     "python@3.10",
-    "python310Packages.pip@23.2.1"
+    "python310Packages.pip@23.2",
+    "doppler@3.66"
   ],
   "shell": {
     "init_hook": [
-      "python --version",
-      "pip --version",
-      "echo 'Activating python virtual env'",
-      ". $VENV_DIR/bin/activate",
-      "pip install -r requirements.txt"
+      ". ./devbox_init.sh"
     ],
     "scripts": {
       "uninstall_requirements": "pip uninstall -y -r <(pip freeze)"
