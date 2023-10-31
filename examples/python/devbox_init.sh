@@ -1,7 +1,7 @@
 init_python () {
   echo ""
-  python --version
-  pip --version
+  echo "Python version: $(python --version)"
+  echo "Pip version:    $(pip --version)"
 
   echo ""
   echo "Activating python virtual env:"
@@ -15,6 +15,7 @@ init_python () {
 
 init_doppler () {
   echo ""
+  echo "Doppler version: $(doppler --version)"
   doppler run -- true  2> /dev/null
   if [ $? -ne 0 ]; then
     echo "Authenticate with Doppler:"
