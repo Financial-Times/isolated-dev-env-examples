@@ -7,9 +7,6 @@
   "shell": {
     "init_hook": [
       ". ./devbox_init.sh"
-    ],
-    "scripts": {
-      "uninstall_requirements": "pip uninstall -y -r <(pip freeze)"
-    }
+    ]
   }
 }
