@@ -1,0 +1,14 @@
+{
+  "name": "node-example",
+  "version": "0.0.1",
+  "description": "A simple node example demonstrating devbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@financial-times/o-buttons": "^7.9.1"
+  }
+}

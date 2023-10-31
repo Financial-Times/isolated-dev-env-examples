@@ -1,0 +1,11 @@
+{
+  "packages": [
+    "doppler@3.66",
+    "nodejs@20"
+  ],
+  "shell": {
+    "init_hook": [
+      ". ./devbox_init.sh"
+    ]
+  }
+}
