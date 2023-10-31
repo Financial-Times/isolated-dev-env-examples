@@ -1,0 +1,14 @@
+{
+  "packages": [
+    "python@3.10",
+    "python310Packages.pip@23.2",
+    "doppler@3.66",
+    "nodejs@20",
+    "nodePackages.serverless@3.34.0"
+  ],
+  "shell": {
+    "init_hook": [
+      ". ./devbox_init.sh"
+    ]
+  }
+}
