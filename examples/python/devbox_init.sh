@@ -23,7 +23,7 @@ init_doppler () {
   fi
   if [ -z $(doppler configure get config --plain) ]; then
     echo "Configure Doppler config:"
-    doppler setup -p isolated-dev-env-examples
+    doppler setup -p $DOPPLER_PROJECT
   fi
   echo "Configuring Doppler secrets as env vars:"
   echo "  project: $(doppler configure get project --plain)"
@@ -35,6 +35,8 @@ echo ""
 echo "Executing $(basename $0) ..."
 
 init_python
+
+DOPPLER_PROJECT="repo_isolated-dev-env-examples"
 init_doppler
 
 echo ""
