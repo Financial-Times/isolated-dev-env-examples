@@ -6,6 +6,6 @@
     "DOPPLER_PROJECT": "repo_isolated-dev-env-examples"
   },
   "include": [
-    "github:financial-times/isolated-dev-env-examples?dir=examples/plugins/ft-doppler"
+    "github:financial-times/isolated-dev-env-examples?dir=plugins/ft-doppler"
   ]
 }
