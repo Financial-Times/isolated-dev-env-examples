@@ -1,16 +1,25 @@
-init_node() {
-  echo "Node version: $(node --version)"
-  echo "Npm version:  $(npm --version)"
-  
+#!/bin/bash
+set -eo pipefail
+
+install_dependencies() {
   echo ""
   echo "Installing npm dependencies:"
   npm install
 }
 
-echo ""
-echo "Executing $(basename $0) ..."
+print_version_info() {
+  echo ""
+  echo "node version: $(node --version)"
+  echo "npm version:  v$(npm --version)"
+}
 
-init_node
+echo ""
+echo "\e[1;32m$(basename $0) ...\e[0m"
+
+install_dependencies
+print_version_info
 
 echo ""
-echo "Done."
+echo "\e[1;32mDone.\e[0m"
+
+set +eo pipefail

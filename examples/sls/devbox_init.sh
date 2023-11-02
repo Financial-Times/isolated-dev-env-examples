@@ -1,3 +1,6 @@
+#!/bin/bash
+set -eo pipefail
+
 init_python () {
   echo ""
   echo "Python version: $(python --version)"
@@ -26,3 +29,5 @@ init_sls
 
 echo ""
 echo "Done."
+
+set +eo pipefail
