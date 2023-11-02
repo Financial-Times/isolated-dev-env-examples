@@ -1,0 +1,13 @@
+{
+    "name": "ft-doppler",
+    "version": "0.0.31",
+    "readme": "This plugin adds a script for sourcing secrets from Doppler",
+    "create_files": {
+        "{{ .Virtenv }}/bin/ftDopplerShellHook.sh": "dopplerShellHook.sh"
+    },
+    "shell": {
+        "init_hook": [
+            ". {{ .Virtenv }}/bin/ftDopplerShellHook.sh"
+        ]
+    }
+}
