@@ -3,6 +3,12 @@
     "doppler@3.66",
     "nodejs@20"
   ],
+  "env": {
+    "DOPPLER_PROJECT": "repo_isolated-dev-env-examples"
+  },
+  "include": [
+    "github:Financial-Times/isolated-dev-env-examples?dir=plugins/ft-doppler"
+  ],
   "shell": {
     "init_hook": [
       ". ./devbox_init.sh"
